@@ -57,7 +57,12 @@ const quizzes = {
             },
             correctAnswer: "b"
           },
-    ]
+    ],
+    'python': [],
+    'java': [],
+    'redux': [],
+    'HTML/CSS': [],
+    'Material-UI': []
 }
 
 export default quizzes;

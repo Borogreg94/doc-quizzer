@@ -5,6 +5,7 @@ import QuizPage from './QuizPage';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import quizzes from './quizzes'
 import {AppBar, Paper, Toolbar, Typography} from '@material-ui/core'
+//delete later
 
 function App() {
   

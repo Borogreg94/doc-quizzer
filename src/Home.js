@@ -13,7 +13,7 @@ function Home() {
 						{name}
 					</Typography>
 				</Button> */}
-				<button data-hover='Start'>
+				<button className='homeQuizButton' data-hover='Start'>
 					<div>{name}</div>
 				</button>
 			</Link>

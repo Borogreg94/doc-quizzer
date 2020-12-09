@@ -19,10 +19,10 @@
 	}
 }
 
-button:hover {
+.homeQuizButton:hover {
 	cursor: pointer;
 }
-button {
+.homeQuizButton {
 	background: transparent;
 	outline: none;
 	position: relative;
@@ -31,14 +31,16 @@ button {
 	width: 100%;
 	overflow: hidden;
 	font-family: 'title';
+	text-shadow: -3px 5px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: -3px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 /*button:before (attr data-hover)*/
-button:hover:before {
+.homeQuizButton:hover:before {
 	opacity: 1;
 	transform: translate(0, 0);
 }
-button:before {
+.homeQuizButton:before {
 	content: attr(data-hover);
 	position: absolute;
 	top: 0.8em;
@@ -53,11 +55,11 @@ button:before {
 	transition: all 0.3s ease-in-out;
 }
 /*button div (button text before hover)*/
-button:hover div {
+.homeQuizButton:hover div {
 	opacity: 0;
 	transform: translate(100%, 0);
 }
-button div {
+.homeQuizButton div {
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-weight: 800;

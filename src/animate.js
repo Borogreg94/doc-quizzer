@@ -44,4 +44,18 @@ export const animate = {
 			delay: 200,
 		});
 	},
+
+	titleAnimator() {
+		for (let i = 1; i <= 13; i++) {
+			anime({
+				targets: `.t${i}`,
+				translateY: [-10, 10],
+				loop: true,
+				duration: 2000,
+				direction: 'alternate',
+				easing: 'easeInOutQuad',
+				delay: 100 * i,
+			});
+		}
+	},
 };

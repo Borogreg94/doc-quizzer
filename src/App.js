@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
 function App() {
 	const classes = useStyles();
 	const quizArr = Object.keys(quizzes);
+
 	useEffect(() => {
 		animate.titleAnimator();
 	}, []);

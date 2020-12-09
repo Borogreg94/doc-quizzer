@@ -7,7 +7,7 @@ function Home() {
 	const quizArr = Object.keys(quizzes);
 	const quizList = quizArr.map((name) => (
 		<Grid item sm={4} md={3} style={{ 'margin-top': '20px' }}>
-			<Link to={`/${name}`} style={{ textDecoration: 'none' }}>
+			<Link to={`/music-quizzer/${name}`} style={{ textDecoration: 'none' }}>
 				{/* <Button variant='contained' color='primary'>
 					<Typography style={{ fontFamily: 'Work Sans', fontSize: '20px' }}>
 						{name}

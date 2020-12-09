@@ -37,7 +37,7 @@ function App() {
 	}, []);
 
 	const quizPageList = quizArr.map((name) => (
-		<Route path={`/${name}`}>
+		<Route path={`/music-quizzer/${name}`}>
 			<QuizPage quizName={name} />
 		</Route>
 	));
@@ -54,7 +54,7 @@ function App() {
 				<AppBar className={classes.header} position='static'>
 					<Toolbar style={{ display: 'grid' }}>
 						<Link
-							to='/'
+							to='/music-quizzer/'
 							style={{
 								textDecoration: 'none',
 							}}>
@@ -99,7 +99,7 @@ function App() {
 				</AppBar>
 
 				<Switch>
-					<Route path='' exact>
+					<Route path='/music-quizzer/' exact>
 						<Home />
 					</Route>
 					{quizPageList}

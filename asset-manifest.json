@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/music-quizzer/static/css/main.1d69a3e0.chunk.css",
+    "main.js": "/music-quizzer/static/js/main.615285df.chunk.js",
+    "main.js.map": "/music-quizzer/static/js/main.615285df.chunk.js.map",
+    "runtime-main.js": "/music-quizzer/static/js/runtime-main.6a06bd0b.js",
+    "runtime-main.js.map": "/music-quizzer/static/js/runtime-main.6a06bd0b.js.map",
+    "static/js/2.3b500c8e.chunk.js": "/music-quizzer/static/js/2.3b500c8e.chunk.js",
+    "static/js/2.3b500c8e.chunk.js.map": "/music-quizzer/static/js/2.3b500c8e.chunk.js.map",
+    "index.html": "/music-quizzer/index.html",
+    "precache-manifest.175cd6d89b540e6f6e79691482aa3ec7.js": "/music-quizzer/precache-manifest.175cd6d89b540e6f6e79691482aa3ec7.js",
+    "service-worker.js": "/music-quizzer/service-worker.js",
+    "static/css/main.1d69a3e0.chunk.css.map": "/music-quizzer/static/css/main.1d69a3e0.chunk.css.map",
+    "static/js/2.3b500c8e.chunk.js.LICENSE.txt": "/music-quizzer/static/js/2.3b500c8e.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/music-quizzer/static/media/HighlandGothicFLF.f142568f.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a06bd0b.js",
+    "static/js/2.3b500c8e.chunk.js",
+    "static/css/main.1d69a3e0.chunk.css",
+    "static/js/main.615285df.chunk.js"
+  ]
+}

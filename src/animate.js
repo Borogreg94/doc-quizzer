@@ -49,11 +49,11 @@ export const animate = {
 		for (let i = 1; i <= 13; i++) {
 			anime({
 				targets: `.t${i}`,
-				translateY: [-10, 10],
+				translateY: [-7, 7],
 				loop: true,
 				duration: 2000,
 				direction: 'alternate',
-				easing: 'easeInOutQuad',
+				easing: 'linear',
 				delay: 100 * i,
 			});
 		}

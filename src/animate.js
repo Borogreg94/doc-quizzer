@@ -33,4 +33,15 @@ export const animate = {
 			duration: 0,
 		});
 	},
+
+	changeQuestion() {
+		anime({
+			targets: `.qCard`,
+			scale: '0',
+			duration: 300,
+			direction: 'alternate',
+			easing: 'easeInOutQuad',
+			delay: 200,
+		});
+	},
 };

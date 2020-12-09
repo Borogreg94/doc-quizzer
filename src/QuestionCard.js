@@ -23,8 +23,10 @@ function QuestionCard(props) {
 	const classes = useStyles();
 
 	return (
-		<Card>
-			<Grid container style={{ border: '1px solid black' }}>
+		<Card className='qCard' style={{ alignSelf: 'center' }}>
+			<Grid
+				container
+				style={{ border: '1px solid black', padding: '0 10px 0 10px' }}>
 				<Grid item xs={6}>
 					<Typography style={{ textAlign: 'left' }}>{quizName}</Typography>
 				</Grid>
@@ -47,7 +49,7 @@ function QuestionCard(props) {
 							variant='outlined'
 							onClick={checkAnswer}
 							value='a'>
-							-{quizQuestions[currentQuestion].answers.a}
+							{quizQuestions[currentQuestion].answers.a}
 						</Button>
 					</Grid>
 
@@ -57,7 +59,7 @@ function QuestionCard(props) {
 							variant='outlined'
 							onClick={checkAnswer}
 							value='b'>
-							-{quizQuestions[currentQuestion].answers.b}
+							{quizQuestions[currentQuestion].answers.b}
 						</Button>
 					</Grid>
 
@@ -68,7 +70,7 @@ function QuestionCard(props) {
 								variant='outlined'
 								onClick={checkAnswer}
 								value='c'>
-								-{quizQuestions[currentQuestion].answers.c}
+								{quizQuestions[currentQuestion].answers.c}
 							</Button>
 						</Grid>
 					) : null}
@@ -80,7 +82,7 @@ function QuestionCard(props) {
 								variant='outlined'
 								onClick={checkAnswer}
 								value='d'>
-								-{quizQuestions[currentQuestion].answers.d}
+								{quizQuestions[currentQuestion].answers.d}
 							</Button>
 						</Grid>
 					) : null}

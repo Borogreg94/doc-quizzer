@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import quizzes from './quizzes';
-import { Grow, Typography, Grid, Button, Paper } from '@material-ui/core';
+import { Grow, Card, Typography, Grid, Button, Paper } from '@material-ui/core';
 import QuestionCard from './QuestionCard';
 import Timer from './Timer';
 import { animate } from './animate';
@@ -30,9 +30,13 @@ function QuizPage(props) {
 		}
 
 		setTimeout(() => {
+			animate.changeQuestion();
+		}, 1200);
+
+		setTimeout(() => {
 			animate.resetChoiceColors(selected, correctAnswer);
 			setCurrentQuestion(currentQuestion + 1);
-		}, 2000);
+		}, 1700);
 	};
 
 	const replayQuiz = () => {
@@ -48,6 +52,7 @@ function QuizPage(props) {
 				height: '0px',
 				backgroundColor: '#ad7979',
 				backgroundImage: `url(${imgList[currentQuestion]})`,
+				transition: 'background-image 1s',
 			}}>
 			<Grid
 				container
@@ -55,12 +60,16 @@ function QuizPage(props) {
 				alignItems='stretch'
 				justify='center'
 				style={{ height: '100%' }}>
-				<Grid item xs={false} sm={3} />
+				<Grid item xs={false} sm={2} />
 				<Grid
 					item
-					style={{ backgroundColor: 'rgba(0, 0, 0, 0.55)' }}
+					style={{
+						backgroundColor: 'rgba(0, 0, 0, 0.55)',
+						display: 'grid',
+						padding: '0 20px 0 20px',
+					}}
 					xs={11}
-					sm={6}>
+					sm={7}>
 					{/* <Timer
 						quizOver={currentQuestion <= quizQuestions.length - 1}
 						currentQuestion={currentQuestion}
@@ -74,16 +83,16 @@ function QuizPage(props) {
 							checkAnswer={checkAnswer}
 						/>
 					) : (
-						<Paper>
+						<Card className='qCard' style={{ alignSelf: 'center' }}>
 							<Typography>End Of Quiz</Typography>
 							<Typography>
 								Final Score {score}/{quizQuestions.length}
 							</Typography>
 							<Button onClick={replayQuiz}>Try Again</Button>
-						</Paper>
+						</Card>
 					)}
 				</Grid>
-				<Grid item xs={false} sm={3} />
+				<Grid item xs={false} sm={2} />
 			</Grid>
 		</div>
 	);

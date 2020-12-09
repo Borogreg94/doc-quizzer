@@ -8,11 +8,14 @@ function Home() {
 	const quizList = quizArr.map((name) => (
 		<Grid item sm={4} md={3} style={{ 'margin-top': '20px' }}>
 			<Link to={`/${name}`} style={{ textDecoration: 'none' }}>
-				<Button variant='contained' color='primary'>
+				{/* <Button variant='contained' color='primary'>
 					<Typography style={{ fontFamily: 'Work Sans', fontSize: '20px' }}>
 						{name}
 					</Typography>
-				</Button>
+				</Button> */}
+				<button data-hover='Start'>
+					<div>{name}</div>
+				</button>
 			</Link>
 		</Grid>
 	));
@@ -23,7 +26,7 @@ function Home() {
 				container
 				justify='space-evenly'
 				spacing={3}
-				style={{ width: '100%' }}>
+				style={{ width: '100%', padding: '0 20px 0 20px', margin: '0px' }}>
 				{quizList}
 			</Grid>
 		</div>

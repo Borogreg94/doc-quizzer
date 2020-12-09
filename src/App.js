@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
 		},
 	},
 	header: {
-		backgroundImage: `url(https://www.transparenttextures.com/patterns/broken-noise.png), linear-gradient( #f19a67, #c7642b)`,
+		backgroundImage: `url(https://www.transparenttextures.com/patterns/broken-noise.png), linear-gradient( #d6d6d6, #c7642b)`,
 		paddingBottom: '5px',
 	},
 }));
@@ -39,9 +39,9 @@ function App() {
 			<div
 				className='App'
 				style={{
-					backgroundColor: '#aaaaaa',
+					backgroundColor: '#bb7d58',
 					backgroundImage:
-						'url("https://www.transparenttextures.com/patterns/brilliant.png")',
+						'url("https://www.transparenttextures.com/patterns/brick-wall.png")',
 				}}>
 				<AppBar className={classes.header} position='static'>
 					<Toolbar style={{ display: 'grid' }}>

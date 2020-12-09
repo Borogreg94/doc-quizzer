@@ -99,7 +99,7 @@ function App() {
 				</AppBar>
 
 				<Switch>
-					<Route path='/' exact>
+					<Route path='' exact>
 						<Home />
 					</Route>
 					{quizPageList}
